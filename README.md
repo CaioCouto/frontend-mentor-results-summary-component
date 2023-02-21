@@ -74,9 +74,8 @@ There is also a `style-guide.md` file containing the information you'll need, su
 ---
 
 ### Links
-**pt** Em breve.
 
-**en** Coming soon.
+[Preview on GitHugb Pages](https://caiocouto.github.io/frontend-mentor-results-summary-component/)
 
 ---
 
