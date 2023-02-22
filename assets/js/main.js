@@ -28,23 +28,23 @@ function returnScoreDivElement(data) {
     return scoreDiv;
 }
 
-function returnScoreArticleElement() {
-    const scoreArticle = document.createElement('article');
-    scoreArticle.classList.add('main-status--score');
+function returnScoreElement() {
+    const score = document.createElement('div');
+    score.classList.add('main-status--score');
 
-    return scoreArticle;
+    return score;
 }
 
 function insertElementsOnDOM(data) {
     const mainStatus = document.querySelector('.main-status');
     const mainStatusBtn = document.querySelector('.main-status--btn');
-    const scoreArticle = returnScoreArticleElement();
+    const score = returnScoreElement();
     const scoreTypeDiv = returnScoreTypeDivElement(data);
     const scoreDiv = returnScoreDivElement(data);
 
-    scoreArticle.appendChild(scoreTypeDiv);
-    scoreArticle.appendChild(scoreDiv);
-    mainStatus.insertBefore(scoreArticle, mainStatusBtn);
+    score.appendChild(scoreTypeDiv);
+    score.appendChild(scoreDiv);
+    mainStatus.insertBefore(score, mainStatusBtn);
 }
 
 function calculateAverageScore(scores) {
